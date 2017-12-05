@@ -9,9 +9,9 @@ async function run() {
 
  await page.goto('https://www.tucarro.com.co/')
  await page.waitForSelector('.nav-search-submit')
- await page.click('button[type=submit]');
+ await page.click('button[type=submit]')
 
-  browser.close()
+ browser.close()
 
 }
 
