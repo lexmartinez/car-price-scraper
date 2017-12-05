@@ -1,0 +1,22 @@
+{
+  "name": "car-price-scraper",
+  "version": "0.0.1",
+  "description": "A Car Price Scraper-Optimizer Using Puppeteer",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lexmartinez/car-price-scraper.git"
+  },
+  "keywords": [
+    "puppeteer",
+    "nodejs"
+  ],
+  "author": "Lex Martinez<lex0316@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lexmartinez/car-price-scraper/issues"
+  },
+  "homepage": "https://lexmartinez.com/read/build-a-car-price-scraper-optimizer-using-puppeteer"
+}

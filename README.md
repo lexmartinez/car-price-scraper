@@ -1,4 +1,4 @@
-# Build a Car Price Scraper-Optimizer Using Puppeteer
+# Build a Car Price Scraper-Optimizer Using Puppeteer :red_car:
 
 **Puppeteer** is an awesome **Node.js** library which provide us a lot of commands to control a headless (or not) chromium instance and automatize navigation with few lines of code. In this project we use the puppeteer super powers and build a car information scraper tool for second hand car catalog and choose the best option.
 
