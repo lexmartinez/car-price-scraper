@@ -27,9 +27,21 @@ async function run() {
   return results
  });
 
- browser.close()
 
- console.log(cars)
+ let car = {score: 0}
+ for (let i = 0; i < cars.length; i++) {
+    cars[i].score = (4 * (1/(cars[i].price/1000000))) + (3 * (cars[i].year/1000)) + (3 * (1/(cars[i].kms/1000)))
+    if(cars[i].score > car.score){
+      car = cars[i]
+    }
+ }
+ console.log(car)
+
+ await page.goto(car.link)
+ await page.waitForSelector('.gallery__thumbnail')
+ await page.screenshot({path: 'result.png', fullPage: true});
+
+ browser.close()
 
 }
 

@@ -20,3 +20,5 @@ node_modules/
 # Editor settings
 .idea
 *.iws
+
+.DS_Store
