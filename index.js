@@ -18,18 +18,18 @@ async function run() {
   return results.map(result => {
      return {
        link: result.querySelector('a').href,
-       price: result.querySelector('.ch-price').textContent,
+       price: Number((result.querySelector('.ch-price').textContent).replace(/[^0-9-]+/g,"")),
        name: result.querySelector('a').textContent,
-       year: result.querySelector('.destaque > strong:nth-child(1)').textContent,
-       kms: result.querySelector('.destaque > strong:nth-child(3)').textContent
+       year: Number(result.querySelector('.destaque > strong:nth-child(1)').textContent),
+       kms: Number((result.querySelector('.destaque > strong:nth-child(3)').textContent).replace(/[^0-9-]+/g,""))
      }
    });
   return results
  });
 
- console.log(cars)
-
  browser.close()
+
+ console.log(cars)
 
 }
 
