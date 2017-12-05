@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/lexmartinez/car-price-scraper/issues"
   },
-  "homepage": "https://lexmartinez.com/read/build-a-car-price-scraper-optimizer-using-puppeteer"
+  "homepage": "https://lexmartinez.com/read/build-a-car-price-scraper-optimizer-using-puppeteer",
+  "dependencies": {
+    "puppeteer": "^0.13.0"
+  }
 }
